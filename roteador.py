@@ -2,7 +2,7 @@ import socket
 import threading
 import psutil
 
-# 🔧 Recomendações:
+# Recomendações:
 # - Entre 100 e 500 threads para PCs rápidos.
 # - 50 ou menos para evitar sobrecarga em máquinas mais fracas.
 MAX_THREADS = 200 # ajuste
