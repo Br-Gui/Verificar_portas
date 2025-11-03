@@ -1,10 +1,7 @@
 import socket
 import threading
 
-# Recomendações:
-# - Para PCs modernos, usar entre 100 e 500 threads simultâneas é razoável.
-# - Para PCs mais modestos, comece com 50 ou menos.
-MAX_THREADS = 200  # ajuste
+MAX_THREADS = 200
 thread_limiter = threading.Semaphore(MAX_THREADS)
 
 def get_local_ip():
