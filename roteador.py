@@ -28,7 +28,7 @@ def scan_port(ip, port):
 def scan_ports_router(start_port=1, end_port=1025):
     router_ip = get_default_gateway()
     if not router_ip:
-        print("❌ Não foi possível detectar o IP do roteador.")
+        print("Não foi possível detectar o IP do roteador.")
         return
 
     print(f"Escaneando roteador em {router_ip} de {start_port} até {end_port}...\n")
