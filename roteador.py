@@ -2,10 +2,7 @@ import socket
 import threading
 import psutil
 
-# Recomendações:
-# - Entre 100 e 500 threads para PCs rápidos.
-# - 50 ou menos para evitar sobrecarga em máquinas mais fracas.
-MAX_THREADS = 200 # ajuste
+MAX_THREADS = 200
 thread_limiter = threading.Semaphore(MAX_THREADS)
 
 def get_default_gateway():
